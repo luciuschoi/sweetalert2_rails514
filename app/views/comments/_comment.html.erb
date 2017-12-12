@@ -1,0 +1,4 @@
+<li id="comment-<%= comment.id %>">
+  <%= comment.content %>
+  <%= link_to 'Delete', [comment.post, comment], method: :delete, remote: true, data: { 'confirm': 'Are you sure?' } %>
+</li>
